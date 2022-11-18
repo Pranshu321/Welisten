@@ -26,7 +26,7 @@ const Div = styled.div`
     position: fixed;
     bottom: 40px;
     right: 40px;
-    background-color: var(--blue);
+    background-color: #FFB6B9;
     padding: 1rem;
     border-radius: 100%;
     display: flex;

@@ -19,8 +19,8 @@ export default function App() {
       <DailyPrices />
       <AboutUs />
       <Services />
-      <SignUp />
-      <Roadmap />
+      {/* <SignUp /> */}
+      {/* <Roadmap /> */}
       <Newsletter />
       <Footer />
     </div>

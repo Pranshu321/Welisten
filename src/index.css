@@ -1,4 +1,8 @@
-* {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,12 +26,10 @@ html {
 }
 
 body {
-  background-color: var(--background);
+  background-color: #61C0BF;
   color: var(--primary);
 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Poppins";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -122,11 +124,11 @@ p {
 
 ::-webkit-scrollbar {
   width: 0.5rem;
-  background-color: var(--background);
+  background-color: #61C0BF;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--blue);
+  background-color: #FFB6B9;
 }
 
 @media screen and (min-width: 280px) and (max-width: 1080px) {

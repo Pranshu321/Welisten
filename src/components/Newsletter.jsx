@@ -4,10 +4,10 @@ import { AiOutlineMail } from "react-icons/ai";
 import Button from "./Button";
 export default function Newsletter() {
   return (
-    <Section id="contact" className="flex j-between a-center gap">
+    <Section id="contact" className="flex shadow-2xl j-between a-center gap">
       <div className="title-container flex column gap-1">
-        <h2>Contact us</h2>
-        <h3 className="subdue">
+        <h2 className="text-3xl">Contact us</h2>
+        <h3 className="text-2xl">
           Want to ask something , lets connected to us. 
         </h3>
       </div>
@@ -25,11 +25,11 @@ export default function Newsletter() {
 const Section = styled.section`
   margin: 0;
   margin-bottom: 8rem;
-  background-color: var(--dark-background);
+  background-color: #BBDED6;
   padding: 8rem;
   .newsletter {
     .input-container {
-      background-color: var(--input-background);
+      background-color: #61C0BF;
       padding: 1rem;
       padding-right: 8rem;
       border-radius: 0.5rem;

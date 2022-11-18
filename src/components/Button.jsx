@@ -24,7 +24,7 @@ export default function Button({ text, icon = false, subduedButton = false }) {
 const Div = styled.div`
   button {
     padding: 0.7rem 1.3rem;
-    background-color: var(--blue);
+    background-color: #FFB6B9;
     color: white;
     border: none;
     border-radius: 0.5rem;
@@ -33,7 +33,7 @@ const Div = styled.div`
     cursor: pointer;
   }
   .subduedBtn {
-    background-color: var(--subdue-button);
+    background-color: #BBDED6;
   }
   @media screen and (min-width: 280px) and (max-width: 1080px) {
     flex-direction: row;
