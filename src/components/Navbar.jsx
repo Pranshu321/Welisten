@@ -6,7 +6,7 @@ import Button from "./Button";
 import { Wallet } from "./Wallet";
 
 export default function Navbar() {
-  const links = ["Home",  "About" , "Blog", "Contact"];
+  const links = ["Home",  "About" , "Contact"];
   const [isNavOpen, setIsNavOpen] = useState(false);
   const html = document.querySelector("html");
   html.addEventListener("click", (e) => setIsNavOpen(false));
