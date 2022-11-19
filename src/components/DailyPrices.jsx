@@ -15,7 +15,7 @@ export default function DailyPrices() {
       name: "Dr.Apparna",
       image: counsellor,
       // short: "BTC",
-      price: "$33,592.99",
+      price: "⭐⭐⭐⭐",
       change: "+4.3%",
       // marketCap: "$635.14B",
       // chart: price1,
@@ -24,7 +24,7 @@ export default function DailyPrices() {
       name: "Dr.Rahul Garg",
       image: counsellor,
       // short: "ETH",
-      price: "$2,273.19",
+      price: "⭐⭐⭐",
       change: "+2.1%",
       // marketCap: "$267.12B",
       // chart: price2,
@@ -33,7 +33,7 @@ export default function DailyPrices() {
       name: "Dr.Rohit Sharma",
       image: counsellor,
       // short: "GGC",
-      price: "$349.47",
+      price: "⭐⭐⭐⭐⭐",
       change: "-7.9%",
       // marketCap: "$57.16B",
       // chart: price3,
@@ -42,7 +42,7 @@ export default function DailyPrices() {
       name: "Dr.Ankit Singh",
       image: counsellor,
       // short: "BTC",
-      price: "$0.9434",
+      price: "⭐⭐",
       change: "0.0%",
       // marketCap: "$27.12B",
       // chart: price4,
@@ -76,7 +76,16 @@ export default function DailyPrices() {
                   <span>{index + 1}</span>
                   <div className="name flex gap-1 a-center">
                     <span className="image">
-                      <img src={image} alt="name" />
+                      <img
+                        src={image}
+                        alt="name"
+                        style={{
+                          borderRadius:"30%",
+                          height:"50px"
+                        }}
+                        // style="border-radius:50%;"
+                        // style="width:100px;"
+                      />
                     </span>
                     <span>{name}</span>
                     <span className="short subdue">{short}</span>

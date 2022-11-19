@@ -15,6 +15,8 @@ export default function App() {
           <Route exact path={"/"} component={Landing} />
           <Route exact path={"/dashboard"} component={Dashboard} />
           <Route exact path={"/blog"} component={Homee} />
+          <Route exact path="/blog/:id" element={Homee} />
+          {/* <Route exact path={"/blog:id"} component={Homee} /> */}
         </Switch>
       </Router>
     </div>
