@@ -5,6 +5,7 @@ import { ChevronDownIcon, FunnelIcon, StarIcon } from '@heroicons/react/20/solid
 import { Disconnect } from './Disconnect'
 import toast, { Toaster } from "react-hot-toast";
 import Button from './Button'
+import SignUp from './SignUp'
 const navigation = {
     categories: [
         {
@@ -197,12 +198,10 @@ const filters = {
         { value: 'Substance_Addiction', label: 'Substance Addiction', checked: false },
     ],
     color: [
-        { value: 'white', label: 'White', checked: false },
-        { value: 'beige', label: 'Beige', checked: false },
-        { value: 'blue', label: 'Blue', checked: false },
-        { value: 'brown', label: 'Brown', checked: false },
-        { value: 'green', label: 'Green', checked: false },
-        { value: 'purple', label: 'Purple', checked: false },
+        { value: 'white', label: 'Pain disorders', checked: false },
+        { value: 'beige', label: 'Identity Crisis', checked: false },
+        { value: 'blue', label: 'Arousal Disorders', checked: false },
+        { value: 'brown', label: 'Desire Disorders', checked: false },
     ],
     // size: [
     //     { value: 'xs', label: 'XS', checked: false },
@@ -495,11 +494,8 @@ export default function Dashboard() {
                     </div>
                 </nav>
             </header>
-
             <div>
-
             </div>
-
             <main className="pb-24">
                 <div className="pb-12 px-4 text-center sm:px-6 lg:px-8" style={{ marginTop: "-78px" }}>
                     <h1 className="text-4xl font-bold tracking-tight text-gray-900">Welcome User</h1>
@@ -508,6 +504,9 @@ export default function Dashboard() {
                     </p>
                 </div>
                 {/* Filters */}
+                <div>
+                    <SignUp />
+                </div>
                 <Disclosure
                     as="section"
                     aria-labelledby="filter-heading"
@@ -558,7 +557,7 @@ export default function Dashboard() {
                                     </div>
                                 </fieldset>
                                 <fieldset>
-                                    <legend className="block font-medium">Sexual Issues</legend>
+                                    <legend className="block font-medium text-black text-xl">Sexual Issues</legend>
                                     <div className="space-y-6 pt-6 sm:space-y-4 sm:pt-4">
                                         {filters.color.map((option, optionIdx) => (
                                             <div key={option.value} className="flex items-center text-base sm:text-sm">

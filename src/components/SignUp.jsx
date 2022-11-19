@@ -2,21 +2,29 @@ import React from "react";
 import styled from "styled-components";
 import card from "../assets/card.png";
 import signupBackground from "../assets/signupBackground.png";
+import Button from "./Button";
 
 export default function SignUp() {
   return (
     <Section className="flex gap j-between">
-      <div className="content text-center">
-        <h2>Sign up without any bank account linking and card</h2>
-      </div>
-      <div className="image">
-        <img src={card} alt="card" />
+      <div className="content text-center flex flex-row gap-5">
+        <h2 className="font-semibold">Give Your Valuevale Feedback to us 😁</h2>
+        <button style={{
+          padding: "0.7rem 1.3rem",
+          backgroundColor: "#61C0BF",
+          color: "white",
+          border: "none",
+          borderRadius: "0.5rem",
+          fontS: "1.1rem",
+          fontWeight: "bolder",
+          cursor: "pointer",
+        }}> Feedback </button>
       </div>
     </Section>
   );
 }
 const Section = styled.section`
-  background-image: url(${signupBackground});
+  background: #FFB6B9;
   background-size: contain;
   margin: 0;
   margin-bottom: 8rem;

@@ -4,43 +4,36 @@ import { BsFacebook, BsTwitter, BsYoutube } from "react-icons/bs";
 import spacemen from "../assets/spacemen.png";
 import cards from "../assets/cards.png";
 export default function Footer() {
-  const companyLinks = [
-    "About",
-    "Careers",
-    "Affiliates",
-    "Blog",
-    "Press",
-    "Investors",
-    "Legal & Privacy",
-    "Cookie policy",
-    "Cookie preferences",
-  ];
-  const LearnLinks = [
-    "Browse crypto prices",
-    "Coinbase Bytes newsletter",
-    "Crypto basics",
-    "Tips & Turoials",
-    "Market Updates",
-    "What is Bitcoin?",
-    "What is crypto?",
-    "What is a blockchain?",
-    "How to set up a crypto waller",
-    "How to send crypto",
-  ];
+  // const companyLinks = [
+  //   "About",
+  //   "Career"
+  // ];
+  // const LearnLinks = [
+  //   "Browse crypto prices",
+  //   "Coinbase Bytes newsletter",
+  //   "Crypto basics",
+  //   "Tips & Turoials",
+  //   "Market Updates",
+  //   "What is Bitcoin?",
+  //   "What is crypto?",
+  //   "What is a blockchain?",
+  //   "How to set up a crypto waller",
+  //   "How to send crypto",
+  // ];
   const socialIcons = [<BsFacebook />, <BsTwitter />, <BsYoutube />];
   return (
     <Foot className="flex column gap">
       <div className="upper-footer">
         <div className=" flex column gap-1">
           <div className="brand">
-            <h2>Welisten</h2>
+            <h2 className="text-3xl font-semibold">Welisten</h2>
           </div>
           <div className="address">
-            <p>GymVast, 18 East 50th Street, 4th Floor, New York, NY 10022</p>
+            <p>IIIT Delhi , Okhla Industrial Area , Delhi :- 110032</p>
           </div>
           <div className="info">
-            <span>T : +1-202-555-0184</span>
-            <span>E : hello@cryptoz.com</span>
+            <span>T : +91-9677883255</span>
+            <span>E : hello@welisten.com</span>
           </div>
           <div className="social-icons flex gap-2">
             {socialIcons.map((icon, index) => {
@@ -54,33 +47,22 @@ export default function Footer() {
         </div>
         <div className=" flex column gap-1">
           <div className="title">
-            <h3>Company</h3>
+            {/* <h3>Company</h3> */}
           </div>
-          <ul className="flex column gap-half">
+          {/* <ul className="flex column gap-half">
             {companyLinks.map((link) => {
               return <li key={link}>{link}</li>;
             })}
-          </ul>
+          </ul> */}
         </div>
         <div className=" flex column gap-1">
           <div className="title">
-            <h3>Learn</h3>
           </div>
-          <ul className="flex column gap-half">
-            {LearnLinks.map((link) => {
-              return <li key={link}>{link}</li>;
-            })}
-          </ul>
         </div>
         <div className=" flex column gap-1">
           <div className="title">
-            <h3>Company</h3>
+            {/* <h3 className="text-2xl">Welisten</h3> */}
           </div>
-          <ul className="flex column gap-half">
-            {companyLinks.map((link) => {
-              return <li key={link}>{link}</li>;
-            })}
-          </ul>
         </div>
       </div>
       <div className="lower-footer flex a-center j-between gap">

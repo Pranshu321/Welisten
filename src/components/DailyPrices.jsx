@@ -61,7 +61,7 @@ export default function DailyPrices() {
           <span>#</span>
           <span>Name</span>
           <span>Rating </span>
-          <span>Option</span>
+          {/* <span>Option</span> */}
           {/* <span>Market Cap</span>
           <span>Chart</span> */}
         </div>
@@ -91,9 +91,9 @@ export default function DailyPrices() {
                     <span className="short subdue">{short}</span>
                   </div>
                   <span>{price}</span>
-                  <span className={getPriceChangeClassName(change)}>
+                  {/* <span className={getPriceChangeClassName(change)}>
                     {change}
-                  </span>
+                  </span> */}
                   {/* <span>{marketCap}</span>
                   <span className="chart">
                     <img src={chart} alt="chart" />
