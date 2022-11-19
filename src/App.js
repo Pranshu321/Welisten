@@ -6,6 +6,7 @@ import Dashboard from "./components/Dashboard";
 import Homee from "./components/BlogPage/pages/Homee";
 import Blog from "./components/BlogPage/pages/Blog";
 import Error from "./components/BlogPage/pages/Error";
+import { Wallet } from "./components/Wallet.tsx";
 
 export default function App() {
   return (
@@ -15,8 +16,7 @@ export default function App() {
           <Route exact path={"/"} component={Landing} />
           <Route exact path={"/dashboard"} component={Dashboard} />
           <Route exact path={"/blog"} component={Homee} />
-          <Route exact path="/blog/:id" element={Homee} />
-          {/* <Route exact path={"/blog:id"} component={Homee} /> */}
+          <Route exact path={"/wallet"} component={Wallet} />
         </Switch>
       </Router>
     </div>

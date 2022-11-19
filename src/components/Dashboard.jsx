@@ -2,6 +2,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Menu, Popover, Tab, Transition } from '@headlessui/react'
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, UserIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, StarIcon } from '@heroicons/react/20/solid'
+import { Disconnect } from './Disconnect'
 const navigation = {
     categories: [
         {
