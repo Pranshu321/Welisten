@@ -19,7 +19,7 @@ export default function Home() {
           </h3>
         </div>
         <div className="title">
-          <h1>The Easiest Way to tackle mental issues</h1>
+          <h1>Discover, retreat and relax yourself</h1>
         </div>
         <div className="description">
           <p className="subdue">

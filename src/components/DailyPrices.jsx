@@ -7,44 +7,45 @@ import price4 from "../assets/price4.png";
 import bitcoin from "../assets/bitcoin.png";
 import ethereum from "../assets/ethereum.png";
 import ggcoin from "../assets/ggcoin.png";
+import counsellor from "../assets/counsellor.jpeg"
 
 export default function DailyPrices() {
   const data = [
     {
-      name: "Bitcoin",
-      image: bitcoin,
-      short: "BTC",
+      name: "Dr.Apparna",
+      image: counsellor,
+      // short: "BTC",
       price: "$33,592.99",
       change: "+4.3%",
-      marketCap: "$635.14B",
-      chart: price1,
+      // marketCap: "$635.14B",
+      // chart: price1,
     },
     {
-      name: "Ethereum",
-      image: ethereum,
-      short: "ETH",
+      name: "Dr.Rahul Garg",
+      //  image: ethereum,
+      // short: "ETH",
       price: "$2,273.19",
       change: "+2.1%",
-      marketCap: "$267.12B",
-      chart: price2,
+      // marketCap: "$267.12B",
+      // chart: price2,
     },
     {
-      name: "GGCoin",
-      image: ggcoin,
-      short: "GGC",
+      name: "Dr.Rohit Sharma",
+      // image: ggcoin,
+      // short: "GGC",
       price: "$349.47",
       change: "-7.9%",
-      marketCap: "$57.16B",
-      chart: price3,
+      // marketCap: "$57.16B",
+      // chart: price3,
     },
     {
-      name: "Bitcoin",
-      image: bitcoin,
-      short: "BTC",
+      name: "Dr.Ankit Singh",
+      // image: bitcoin,
+      // short: "BTC",
       price: "$0.9434",
       change: "0.0%",
-      marketCap: "$27.12B",
-      chart: price4,
+      // marketCap: "$27.12B",
+      // chart: price4,
     },
   ];
   const getPriceChangeClassName = (change) => {
@@ -59,10 +60,10 @@ export default function DailyPrices() {
         <div className="header subdue">
           <span>#</span>
           <span>Name</span>
-          <span>Price</span>
-          <span>Change</span>
-          <span>Market Cap</span>
-          <span>Chart</span>
+          <span>Rating </span>
+          <span>Option</span>
+          {/* <span>Market Cap</span>
+          <span>Chart</span> */}
         </div>
         <div className="data flex column gap-1">
           {data.map(
@@ -84,10 +85,10 @@ export default function DailyPrices() {
                   <span className={getPriceChangeClassName(change)}>
                     {change}
                   </span>
-                  <span>{marketCap}</span>
+                  {/* <span>{marketCap}</span>
                   <span className="chart">
                     <img src={chart} alt="chart" />
-                  </span>
+                  </span> */}
                 </div>
               );
             }
