@@ -3,6 +3,8 @@ import { Dialog, Disclosure, Menu, Popover, Tab, Transition } from '@headlessui/
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, UserIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, StarIcon } from '@heroicons/react/20/solid'
 import { Disconnect } from './Disconnect'
+import toast, { Toaster } from "react-hot-toast";
+import Button from './Button'
 const navigation = {
     categories: [
         {
@@ -189,19 +191,19 @@ const navigation = {
 }
 const filters = {
     price: [
-        { value: 'Stress', label: 'Stress', checked: false },
+        { value: 'Stress', label: 'Stress', checked: true },
         { value: 'Anxiety', label: 'Anxiety', checked: false },
         { value: 'Depression', label: 'Depression', checked: false },
         { value: 'Substance_Addiction', label: 'Substance Addiction', checked: false },
-    ]
-    // color: [
-    //     { value: 'white', label: 'White', checked: false },
-    //     { value: 'beige', label: 'Beige', checked: false },
-    //     { value: 'blue', label: 'Blue', checked: true },
-    //     { value: 'brown', label: 'Brown', checked: false },
-    //     { value: 'green', label: 'Green', checked: false },
-    //     { value: 'purple', label: 'Purple', checked: false },
-    // ],
+    ],
+    color: [
+        { value: 'white', label: 'White', checked: false },
+        { value: 'beige', label: 'Beige', checked: false },
+        { value: 'blue', label: 'Blue', checked: false },
+        { value: 'brown', label: 'Brown', checked: false },
+        { value: 'green', label: 'Green', checked: false },
+        { value: 'purple', label: 'Purple', checked: false },
+    ],
     // size: [
     //     { value: 'xs', label: 'XS', checked: false },
     //     { value: 's', label: 'S', checked: true },
@@ -299,11 +301,42 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
+const ids = ["ed321", "fg565", "hgk5654", "gfk4343", "fdf213", "dflf775"];
+
+function SendRoomid() {
+    toast.success(`Your Chat room Id : ${ids[2]}`)
+}
+
 export default function Dashboard() {
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
 
     return (
         <div className="bg-white">
+            <Toaster
+                position="top-center"
+                reverseOrder={false}
+                gutter={8}
+                containerClassName=""
+                containerStyle={{}}
+                toastOptions={{
+                    // Define default options
+                    className: "",
+                    duration: 5000,
+                    style: {
+                        background: "#363636",
+                        color: "#fff",
+                    },
+
+                    // Default options for specific types
+                    success: {
+                        duration: 5000,
+                        theme: {
+                            primary: "green",
+                            secondary: "black",
+                        },
+                    },
+                }}
+            />
             {/* Mobile menu */}
             <Transition.Root show={open} as={Fragment}>
                 <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -522,8 +555,8 @@ export default function Dashboard() {
                                         ))}
                                     </div>
                                 </fieldset>
-                                {/* <fieldset>
-                                    <legend className="block font-medium">Color</legend>
+                                <fieldset>
+                                    <legend className="block font-medium">Sexual Issues</legend>
                                     <div className="space-y-6 pt-6 sm:space-y-4 sm:pt-4">
                                         {filters.color.map((option, optionIdx) => (
                                             <div key={option.value} className="flex items-center text-base sm:text-sm">
@@ -541,7 +574,7 @@ export default function Dashboard() {
                                             </div>
                                         ))}
                                     </div>
-                                </fieldset> */}
+                                </fieldset>
                             </div>
                             {/* <div className="grid auto-rows-min grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-6">
                                 <fieldset>
@@ -676,6 +709,17 @@ export default function Dashboard() {
                                         {/* <p className="mt-1 text-sm text-gray-500">{product.reviewCount} </p> */}
                                     </div>
                                     <p className="mt-4 text-base font-medium text-gray-500">{product.price}</p>
+                                    <div className='mt-2'>
+                                        <a target={"_blank"} href='https://welistenchat.up.railway.app'>
+                                            <Button text={"Chat"} />
+                                        </a>
+                                        <a onClick={SendRoomid} className='text-black font-semibold pt-2'>Get room id</a>
+                                    </div>
+                                    <div className='mt-5'>
+                                        <a href='https://donate.stripe.com/test_eVa5ljcKu9EjfDOcMP' target={"_blank"}>
+                                            <Button text={"Thank You Token ❤"} />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         ))}
