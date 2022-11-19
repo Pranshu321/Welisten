@@ -1,22 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { AiOutlineMail } from "react-icons/ai";
 import Button from "./Button";
+import emailjs from "emailjs-com";
+import toast, { Toaster } from "react-hot-toast";
 export default function Newsletter() {
+  const [email, setemail] = useState("");
+  function sendMail() {
+    // console.log(email);
+    emailjs
+      .send(
+        "service_hesknwi",
+        "template_ibzkoaw",
+        { email: email },
+        "gP8sKnDLte9gp24k2"
+      )
+      .then(function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        toast.success("Successfully Subscribed");
+        setemail("");
+      })
+      .catch((err) => {
+        toast.error("Invalid Email or Server Error");
+        console.log(err);
+      });
+  }
   return (
     <Section id="contact" className="flex shadow-2xl j-between a-center gap">
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+        gutter={8}
+        containerClassName=""
+        containerStyle={{}}
+        toastOptions={{
+          // Define default options
+          className: "",
+          duration: 3000,
+          style: {
+            background: "#363636",
+            color: "#fff",
+          },
+
+          // Default options for specific types
+          success: {
+            duration: 3000,
+            theme: {
+              primary: "green",
+              secondary: "black",
+            },
+          },
+        }}
+      />
       <div className="title-container flex column gap-1">
         <h2 className="text-3xl">Contact us</h2>
         <h3 className="text-2xl">
-          Want to ask something , lets connected to us. 
+          Want to ask something , lets connected to us.
         </h3>
       </div>
       <div className="newsletter flex j-center a-center gap-2">
         <div className="input-container flex j-center a-center gap-1">
           <AiOutlineMail />
-          <input type="text" placeholder="Enter your email address" />
+          <input onChange={(e) => setemail(e.target.value)} type="text" placeholder="Enter your email address" />
         </div>
+        <a onClick={sendMail}>
         <Button text="Send" />
+        </a>
       </div>
     </Section>
   );

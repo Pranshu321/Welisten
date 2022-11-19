@@ -9,24 +9,22 @@ import Roadmap from "./components/Roadmap";
 import ScrollToTop from "./components/ScrollToTop";
 import Services from "./components/Services";
 import SignUp from "./components/SignUp";
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-import Landing from "./Landing";
-import Dashboard from "./components/Dashboard";
 
-export default function App() {
+const Landing = () => {
   return (
     <div>
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Landing />
-          </Route>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
-        </Switch>
-      </Router>
-
+      <ScrollToTop />
+      <Navbar />
+      <Home />
+      <DailyPrices />
+      <AboutUs />
+      <Services />
+      {/* <SignUp /> */}
+      {/* <Roadmap /> */}
+      <Newsletter />
+      <Footer />
     </div>
-  );
+  )
 }
+
+export default Landing
