@@ -102,8 +102,7 @@ const navigation = {
                     name: 'Accessories',
                     href: '#',
                     imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-category-01.jpg',
-                    imageAlt:
-                        'Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters.',
+                    imageAlt: 'Wooden shelf with gray and olive drab green baseball caps, next to wooden clothes hanger with sweaters.',
                 },
                 {
                     name: 'New Arrivals',
@@ -189,112 +188,111 @@ const navigation = {
 }
 const filters = {
     price: [
-        { value: '0', label: '$0 - $25', checked: false },
-        { value: '25', label: '$25 - $50', checked: false },
-        { value: '50', label: '$50 - $75', checked: false },
-        { value: '75', label: '$75+', checked: false },
-    ],
-    color: [
-        { value: 'white', label: 'White', checked: false },
-        { value: 'beige', label: 'Beige', checked: false },
-        { value: 'blue', label: 'Blue', checked: true },
-        { value: 'brown', label: 'Brown', checked: false },
-        { value: 'green', label: 'Green', checked: false },
-        { value: 'purple', label: 'Purple', checked: false },
-    ],
-    size: [
-        { value: 'xs', label: 'XS', checked: false },
-        { value: 's', label: 'S', checked: true },
-        { value: 'm', label: 'M', checked: false },
-        { value: 'l', label: 'L', checked: false },
-        { value: 'xl', label: 'XL', checked: false },
-        { value: '2xl', label: '2XL', checked: false },
-    ],
-    category: [
-        { value: 'all-new-arrivals', label: 'All New Arrivals', checked: false },
-        { value: 'tees', label: 'Tees', checked: false },
-        { value: 'objects', label: 'Objects', checked: false },
-        { value: 'sweatshirts', label: 'Sweatshirts', checked: false },
-        { value: 'pants-and-shorts', label: 'Pants & Shorts', checked: false },
-    ],
+        { value: 'Stress', label: 'Stress', checked: false },
+        { value: 'Anxiety', label: 'Anxiety', checked: false },
+        { value: 'Depression', label: 'Depression', checked: false },
+        { value: 'Substance_Addiction', label: 'Substance Addiction', checked: false },
+    ]
+    // color: [
+    //     { value: 'white', label: 'White', checked: false },
+    //     { value: 'beige', label: 'Beige', checked: false },
+    //     { value: 'blue', label: 'Blue', checked: true },
+    //     { value: 'brown', label: 'Brown', checked: false },
+    //     { value: 'green', label: 'Green', checked: false },
+    //     { value: 'purple', label: 'Purple', checked: false },
+    // ],
+    // size: [
+    //     { value: 'xs', label: 'XS', checked: false },
+    //     { value: 's', label: 'S', checked: true },
+    //     { value: 'm', label: 'M', checked: false },
+    //     { value: 'l', label: 'L', checked: false },
+    //     { value: 'xl', label: 'XL', checked: false },
+    //     { value: '2xl', label: '2XL', checked: false },
+    // ],
+    // category: [
+    //     { value: 'all-new-arrivals', label: 'All New Arrivals', checked: false },
+    //     { value: 'tees', label: 'Tees', checked: false },
+    //     { value: 'objects', label: 'Objects', checked: false },
+    //     { value: 'sweatshirts', label: 'Sweatshirts', checked: false },
+    //     { value: 'pants-and-shorts', label: 'Pants & Shorts', checked: false },
+    // ],
 }
 const sortOptions = [
     { name: 'Most Popular', href: '#', current: true },
     { name: 'Best Rating', href: '#', current: false },
-    { name: 'Newest', href: '#', current: false },
     { name: 'Price: Low to High', href: '#', current: false },
     { name: 'Price: High to Low', href: '#', current: false },
 ]
 const products = [
     {
         id: 1,
-        name: 'Organize Basic Set (Walnut)',
-        price: '$149',
+        name: 'Dr. Willam Harris',
+        price: 'Specialist: Psychologist',
         rating: 5,
-        reviewCount: 38,
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-01.jpg',
+        reviewCount: 40,
+        imageSrc: 'https://user-images.githubusercontent.com/86917304/202836274-ed4ae42e-e56f-4072-9ab3-fa67bfa51537.png',
         imageAlt: 'TODO',
         href: '#',
     },
     {
         id: 2,
-        name: 'Organize Pen Holder',
-        price: '$15',
+        name: 'Dr. Sita ram',
+        price: 'Specialist : Neurologist',
         rating: 5,
-        reviewCount: 18,
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-02.jpg',
+        reviewCount: 50,
+        imageSrc: 'https://user-images.githubusercontent.com/86917304/202836274-ed4ae42e-e56f-4072-9ab3-fa67bfa51537.png',
         imageAlt: 'TODO',
         href: '#',
     },
     {
         id: 3,
-        name: 'Organize Sticky Note Holder',
-        price: '$15',
+        name: 'Dr. Lith Xuang',
+        price: 'Specialist : Consultant',
         rating: 5,
-        reviewCount: 14,
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-03.jpg',
+        reviewCount: 50,
+        imageSrc: 'https://user-images.githubusercontent.com/86917304/202836274-ed4ae42e-e56f-4072-9ab3-fa67bfa51537.png',
         imageAlt: 'TODO',
         href: '#',
     },
     {
         id: 4,
-        name: 'Organize Phone Holder',
-        price: '$15',
-        rating: 4,
+        name: 'Dr. Maria Mathew',
+        price: 'Specialist : Psychologist',
+        rating: 120,
         reviewCount: 21,
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-05-image-card-04.jpg',
+        imageSrc: 'https://user-images.githubusercontent.com/86917304/202836274-ed4ae42e-e56f-4072-9ab3-fa67bfa51537.png',
         imageAlt: 'TODO',
         href: '#',
     },
     // More products...
 ]
-const footerNavigation = {
-    account: [
-        { name: 'Manage Account', href: '#' },
-        { name: 'Saved Items', href: '#' },
-        { name: 'Orders', href: '#' },
-        { name: 'Redeem Gift card', href: '#' },
-    ],
-    service: [
-        { name: 'Shipping & Returns', href: '#' },
-        { name: 'Warranty', href: '#' },
-        { name: 'FAQ', href: '#' },
-        { name: 'Find a store', href: '#' },
-        { name: 'Get in touch', href: '#' },
-    ],
-    company: [
-        { name: 'Who we are', href: '#' },
-        { name: 'Press', href: '#' },
-        { name: 'Careers', href: '#' },
-        { name: 'Terms & Conditions', href: '#' },
-        { name: 'Privacy', href: '#' },
-    ],
-    connect: [
-        { name: 'Instagram', href: '#' },
-        { name: 'Pinterest', href: '#' },
-        { name: 'Twitter', href: '#' },
-    ],
-}
+// const footerNavigation = {
+//     account: [
+//         { name: 'Manage Account', href: '#' },
+//         { name: 'Saved Items', href: '#' },
+//         { name: 'Orders', href: '#' },
+//         { name: 'Redeem Gift card', href: '#' },
+//     ],
+//     service: [
+//         { name: 'Shipping & Returns', href: '#' },
+//         { name: 'Warranty', href: '#' },
+//         { name: 'FAQ', href: '#' },
+//         { name: 'Find a store', href: '#' },
+//         { name: 'Get in touch', href: '#' },
+//     ],
+//     company: [
+//         { name: 'Who we are', href: '#' },
+//         { name: 'Press', href: '#' },
+//         { name: 'Careers', href: '#' },
+//         { name: 'Terms & Conditions', href: '#' },
+//         { name: 'Privacy', href: '#' },
+//     ],
+//     connect: [
+//         { name: 'Instagram', href: '#' },
+//         { name: 'Pinterest', href: '#' },
+//         { name: 'Twitter', href: '#' },
+//     ],
+// }
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -430,7 +428,6 @@ export default function Dashboard() {
                                         </div>
                                     ))}
                                 </div>
-
                                 <div className="border-t border-gray-200 py-6 px-4">
                                     <a href="#" className="-m-2 flex items-center p-2">
                                         <img
@@ -449,203 +446,28 @@ export default function Dashboard() {
             </Transition.Root>
 
             <header className="relative bg-white">
-                <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="border-b border-gray-200">
-                        <div className="flex h-16 items-center justify-between">
-                            <div className="flex flex-1 items-center lg:hidden">
-                                <button
-                                    type="button"
-                                    className="-ml-2 rounded-md bg-white p-2 text-gray-400"
-                                    onClick={() => setOpen(true)}
-                                >
-                                    <span className="sr-only">Open menu</span>
-                                    <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-                                </button>
-
-                                <a href="#" className="ml-2 p-2 text-gray-400 hover:text-gray-500">
-                                    <span className="sr-only">Search</span>
-                                    <MagnifyingGlassIcon className="h-6 w-6" aria-hidden="true" />
-                                </a>
-                            </div>
-
-                            {/* Flyout menus */}
-                            <Popover.Group className="hidden lg:block lg:flex-1 lg:self-stretch">
-                                <div className="flex h-full space-x-8">
-                                    {navigation.categories.map((category) => (
-                                        <Popover key={category.name} className="flex">
-                                            {({ open }) => (
-                                                <>
-                                                    <div className="relative flex">
-                                                        <Popover.Button
-                                                            className={classNames(
-                                                                open ? 'text-indigo-600' : 'text-gray-700 hover:text-gray-800',
-                                                                'relative z-10 flex items-center justify-center text-sm font-medium transition-colors duration-200 ease-out'
-                                                            )}
-                                                        >
-                                                            {category.name}
-                                                            <span
-                                                                className={classNames(
-                                                                    open ? 'bg-indigo-600' : '',
-                                                                    'absolute inset-x-0 bottom-0 h-0.5 transition-colors duration-200 ease-out sm:mt-5 sm:translate-y-px sm:transform'
-                                                                )}
-                                                                aria-hidden="true"
-                                                            />
-                                                        </Popover.Button>
-                                                    </div>
-
-                                                    <Transition
-                                                        as={Fragment}
-                                                        enter="transition ease-out duration-200"
-                                                        enterFrom="opacity-0"
-                                                        enterTo="opacity-100"
-                                                        leave="transition ease-in duration-150"
-                                                        leaveFrom="opacity-100"
-                                                        leaveTo="opacity-0"
-                                                    >
-                                                        <Popover.Panel className="absolute inset-x-0 top-full z-20">
-                                                            {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
-                                                            <div className="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true" />
-
-                                                            <div className="relative bg-white">
-                                                                <div className="mx-auto max-w-7xl px-8">
-                                                                    <div className="grid grid-cols-2 gap-y-10 gap-x-8 py-16">
-                                                                        <div className="grid grid-cols-2 grid-rows-1 gap-8 text-sm">
-                                                                            {category.featured.map((item, itemIdx) => (
-                                                                                <div
-                                                                                    key={item.name}
-                                                                                    className={classNames(
-                                                                                        itemIdx === 0 ? 'col-span-2 aspect-w-2' : '',
-                                                                                        'group relative aspect-w-1 aspect-h-1 rounded-md bg-gray-100 overflow-hidden'
-                                                                                    )}
-                                                                                >
-                                                                                    <img
-                                                                                        src={item.imageSrc}
-                                                                                        alt={item.imageAlt}
-                                                                                        className="object-cover object-center group-hover:opacity-75"
-                                                                                    />
-                                                                                    <div className="flex flex-col justify-end">
-                                                                                        <div className="bg-white bg-opacity-60 p-4 text-sm">
-                                                                                            <a href={item.href} className="font-medium text-gray-900">
-                                                                                                <span className="absolute inset-0" aria-hidden="true" />
-                                                                                                {item.name}
-                                                                                            </a>
-                                                                                            <p aria-hidden="true" className="mt-0.5 text-gray-700 sm:mt-1">
-                                                                                                Shop now
-                                                                                            </p>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            ))}
-                                                                        </div>
-                                                                        <div className="grid grid-cols-3 gap-y-10 gap-x-8 text-sm text-gray-500">
-                                                                            {category.sections.map((column, columnIdx) => (
-                                                                                <div key={columnIdx} className="space-y-10">
-                                                                                    {column.map((section) => (
-                                                                                        <div key={section.name}>
-                                                                                            <p
-                                                                                                id={`${category.id}-${section.id}-heading`}
-                                                                                                className="font-medium text-gray-900"
-                                                                                            >
-                                                                                                {section.name}
-                                                                                            </p>
-                                                                                            <ul
-                                                                                                role="list"
-                                                                                                aria-labelledby={`${category.id}-${section.id}-heading`}
-                                                                                                className="mt-4 space-y-4"
-                                                                                            >
-                                                                                                {section.items.map((item) => (
-                                                                                                    <li key={item.name} className="flex">
-                                                                                                        <a href={item.href} className="hover:text-gray-800">
-                                                                                                            {item.name}
-                                                                                                        </a>
-                                                                                                    </li>
-                                                                                                ))}
-                                                                                            </ul>
-                                                                                        </div>
-                                                                                    ))}
-                                                                                </div>
-                                                                            ))}
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </Popover.Panel>
-                                                    </Transition>
-                                                </>
-                                            )}
-                                        </Popover>
-                                    ))}
-
-                                    {navigation.pages.map((page) => (
-                                        <a
-                                            key={page.name}
-                                            href={page.href}
-                                            className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                                        >
-                                            {page.name}
-                                        </a>
-                                    ))}
-                                </div>
-                            </Popover.Group>
-
-                            {/* Logo */}
-                            <a href="#" className="flex">
-                                <span className="sr-only">Your Company</span>
-                                <img
-                                    className="h-8 w-auto"
-                                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                    alt=""
-                                />
-                            </a>
-
-                            <div className="flex flex-1 items-center justify-end">
-                                <a href="#" className="hidden text-gray-700 hover:text-gray-800 lg:flex lg:items-center">
-                                    <img
-                                        src="https://tailwindui.com/img/flags/flag-canada.svg"
-                                        alt=""
-                                        className="block h-auto w-5 flex-shrink-0"
-                                    />
-                                    <span className="ml-3 block text-sm font-medium">CAD</span>
-                                    <span className="sr-only">, change currency</span>
-                                </a>
-
-                                {/* Search */}
-                                <a href="#" className="ml-6 hidden p-2 text-gray-400 hover:text-gray-500 lg:block">
-                                    <span className="sr-only">Search</span>
-                                    <MagnifyingGlassIcon className="h-6 w-6" aria-hidden="true" />
-                                </a>
-
-                                {/* Account */}
-                                <a href="#" className="p-2 text-gray-400 hover:text-gray-500 lg:ml-4">
-                                    <span className="sr-only">Account</span>
-                                    <UserIcon className="h-6 w-6" aria-hidden="true" />
-                                </a>
-
-                                {/* Cart */}
-                                <div className="ml-4 flow-root lg:ml-6">
-                                    <a href="#" className="group -m-2 flex items-center p-2">
-                                        <ShoppingBagIcon
-                                            className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
-                                            aria-hidden="true"
-                                        />
-                                        <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
-                                        <span className="sr-only">items in cart, view bag</span>
-                                    </a>
-                                </div>
+                        <div className='flex h-16 items-center justify-center'>
+                            <div>
+                                <h3 className='text-[#61C0BF] text-3xl font-bold'>Welisten</h3>
                             </div>
                         </div>
                     </div>
                 </nav>
             </header>
+            
+            <div>
+                
+            </div>
 
             <main className="pb-24">
-                <div className="py-16 px-4 text-center sm:px-6 lg:px-8">
-                    <h1 className="text-4xl font-bold tracking-tight text-gray-900">Workspace</h1>
+                <div className="pb-12 px-4 text-center sm:px-6 lg:px-8" style={{marginTop: "-78px"}}>
+                    <h1 className="text-4xl font-bold tracking-tight text-gray-900">Welcome User</h1>
                     <p className="mx-auto mt-4 max-w-xl text-base text-gray-500">
-                        The secret to a tidy desk? Don't get rid of anything, just put it in really really nice looking containers.
+                        Feeling alone or finding it tough to share your thoughts & feelings? Don't worry we've got your back! Talk to experts all around the Globe. 
                     </p>
                 </div>
-
                 {/* Filters */}
                 <Disclosure
                     as="section"
@@ -677,7 +499,7 @@ export default function Dashboard() {
                         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-x-4 px-4 text-sm sm:px-6 md:gap-x-6 lg:px-8">
                             <div className="grid auto-rows-min grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-6">
                                 <fieldset>
-                                    <legend className="block font-medium">Price</legend>
+                                    <legend className="block font-medium text-black text-xl">Mental Issues</legend>
                                     <div className="space-y-6 pt-6 sm:space-y-4 sm:pt-4">
                                         {filters.price.map((option, optionIdx) => (
                                             <div key={option.value} className="flex items-center text-base sm:text-sm">
@@ -696,7 +518,7 @@ export default function Dashboard() {
                                         ))}
                                     </div>
                                 </fieldset>
-                                <fieldset>
+                                {/* <fieldset>
                                     <legend className="block font-medium">Color</legend>
                                     <div className="space-y-6 pt-6 sm:space-y-4 sm:pt-4">
                                         {filters.color.map((option, optionIdx) => (
@@ -715,9 +537,9 @@ export default function Dashboard() {
                                             </div>
                                         ))}
                                     </div>
-                                </fieldset>
+                                </fieldset> */}
                             </div>
-                            <div className="grid auto-rows-min grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-6">
+                            {/* <div className="grid auto-rows-min grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-6">
                                 <fieldset>
                                     <legend className="block font-medium">Size</legend>
                                     <div className="space-y-6 pt-6 sm:space-y-4 sm:pt-4">
@@ -758,7 +580,7 @@ export default function Dashboard() {
                                         ))}
                                     </div>
                                 </fieldset>
-                            </div>
+                            </div> */}
                         </div>
                     </Disclosure.Panel>
                     <div className="col-start-1 row-start-1 py-4">
@@ -827,8 +649,8 @@ export default function Dashboard() {
                                 </div>
                                 <div className="pt-10 pb-4 text-center">
                                     <h3 className="text-sm font-medium text-gray-900">
-                                        <a href={product.href}>
-                                            <span aria-hidden="true" className="absolute inset-0" />
+                                        <a href={product.href} className="text-black text-xl font-semibold">
+                                            <span className="text-black" />
                                             {product.name}
                                         </a>
                                     </h3>
@@ -846,148 +668,16 @@ export default function Dashboard() {
                                                 />
                                             ))}
                                         </div>
-                                        <p className="mt-1 text-sm text-gray-500">{product.reviewCount} reviews</p>
+                                        <p className="mt-1 text-sm text-gray-500">Talking Time : {product.reviewCount} mins</p>
+                                        {/* <p className="mt-1 text-sm text-gray-500">{product.reviewCount} </p> */}
                                     </div>
-                                    <p className="mt-4 text-base font-medium text-gray-900">{product.price}</p>
+                                    <p className="mt-4 text-base font-medium text-gray-500">{product.price}</p>
                                 </div>
                             </div>
                         ))}
                     </div>
                 </section>
-
-                {/* Pagination */}
-                <nav
-                    aria-label="Pagination"
-                    className="mx-auto mt-6 flex max-w-7xl justify-between px-4 text-sm font-medium text-gray-700 sm:px-6 lg:px-8"
-                >
-                    <div className="min-w-0 flex-1">
-                        <a
-                            href="#"
-                            className="inline-flex h-10 items-center rounded-md border border-gray-300 bg-white px-4 hover:bg-gray-100 focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-opacity-25 focus:ring-offset-1 focus:ring-offset-indigo-600"
-                        >
-                            Previous
-                        </a>
-                    </div>
-                    <div className="hidden space-x-2 sm:flex">
-                        {/* Current: "border-indigo-600 ring-1 ring-indigo-600", Default: "border-gray-300" */}
-                        <a
-                            href="#"
-                            className="inline-flex h-10 items-center rounded-md border border-gray-300 bg-white px-4 hover:bg-gray-100 focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-opacity-25 focus:ring-offset-1 focus:ring-offset-indigo-600"
-                        >
-                            1
-                        </a>
-                        <a
-                            href="#"
-                            className="inline-flex h-10 items-center rounded-md border border-gray-300 bg-white px-4 hover:bg-gray-100 focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-opacity-25 focus:ring-offset-1 focus:ring-offset-indigo-600"
-                        >
-                            2
-                        </a>
-                        <a
-                            href="#"
-                            className="inline-flex h-10 items-center rounded-md border border-indigo-600 bg-white px-4 ring-1 ring-indigo-600 hover:bg-gray-100 focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-opacity-25 focus:ring-offset-1 focus:ring-offset-indigo-600"
-                        >
-                            3
-                        </a>
-                        <span className="inline-flex h-10 items-center px-1.5 text-gray-500">...</span>
-                        <a
-                            href="#"
-                            className="inline-flex h-10 items-center rounded-md border border-gray-300 bg-white px-4 hover:bg-gray-100 focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-opacity-25 focus:ring-offset-1 focus:ring-offset-indigo-600"
-                        >
-                            8
-                        </a>
-                        <a
-                            href="#"
-                            className="inline-flex h-10 items-center rounded-md border border-gray-300 bg-white px-4 hover:bg-gray-100 focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-opacity-25 focus:ring-offset-1 focus:ring-offset-indigo-600"
-                        >
-                            9
-                        </a>
-                        <a
-                            href="#"
-                            className="inline-flex h-10 items-center rounded-md border border-gray-300 bg-white px-4 hover:bg-gray-100 focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-opacity-25 focus:ring-offset-1 focus:ring-offset-indigo-600"
-                        >
-                            10
-                        </a>
-                    </div>
-                    <div className="flex min-w-0 flex-1 justify-end">
-                        <a
-                            href="#"
-                            className="inline-flex h-10 items-center rounded-md border border-gray-300 bg-white px-4 hover:bg-gray-100 focus:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-opacity-25 focus:ring-offset-1 focus:ring-offset-indigo-600"
-                        >
-                            Next
-                        </a>
-                    </div>
-                </nav>
             </main>
-
-            <footer aria-labelledby="footer-heading" className="bg-white">
-                <h2 id="footer-heading" className="sr-only">
-                    Footer
-                </h2>
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-2 gap-8 border-t border-gray-200 py-20 sm:grid-cols-2 sm:gap-y-0 lg:grid-cols-4">
-                        <div className="grid grid-cols-1 gap-y-10 lg:col-span-2 lg:grid-cols-2 lg:gap-y-0 lg:gap-x-8">
-                            <div>
-                                <h3 className="text-sm font-medium text-gray-900">Account</h3>
-                                <ul role="list" className="mt-6 space-y-6">
-                                    {footerNavigation.account.map((item) => (
-                                        <li key={item.name} className="text-sm">
-                                            <a href={item.href} className="text-gray-500 hover:text-gray-600">
-                                                {item.name}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 className="text-sm font-medium text-gray-900">Service</h3>
-                                <ul role="list" className="mt-6 space-y-6">
-                                    {footerNavigation.service.map((item) => (
-                                        <li key={item.name} className="text-sm">
-                                            <a href={item.href} className="text-gray-500 hover:text-gray-600">
-                                                {item.name}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="grid grid-cols-1 gap-y-10 lg:col-span-2 lg:grid-cols-2 lg:gap-y-0 lg:gap-x-8">
-                            <div>
-                                <h3 className="text-sm font-medium text-gray-900">Company</h3>
-                                <ul role="list" className="mt-6 space-y-6">
-                                    {footerNavigation.company.map((item) => (
-                                        <li key={item.name} className="text-sm">
-                                            <a href={item.href} className="text-gray-500 hover:text-gray-600">
-                                                {item.name}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 className="text-sm font-medium text-gray-900">Connect</h3>
-                                <ul role="list" className="mt-6 space-y-6">
-                                    {footerNavigation.connect.map((item) => (
-                                        <li key={item.name} className="text-sm">
-                                            <a href={item.href} className="text-gray-500 hover:text-gray-600">
-                                                {item.name}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="border-t border-gray-100 py-10 sm:flex sm:items-center sm:justify-between">
-                        <div className="flex items-center justify-center text-sm text-gray-500">
-                            <p>Shipping to Canada ($CAD)</p>
-                            <p className="ml-3 border-l border-gray-200 pl-3">English</p>
-                        </div>
-                        <p className="mt-6 text-center text-sm text-gray-500 sm:mt-0">&copy; 2021 Your Company, Inc.</p>
-                    </div>
-                </div>
-            </footer>
         </div>
     )
 }
