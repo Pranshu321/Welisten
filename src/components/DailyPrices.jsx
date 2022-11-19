@@ -22,7 +22,7 @@ export default function DailyPrices() {
     },
     {
       name: "Dr.Rahul Garg",
-      //  image: ethereum,
+      image: counsellor,
       // short: "ETH",
       price: "$2,273.19",
       change: "+2.1%",
@@ -31,7 +31,7 @@ export default function DailyPrices() {
     },
     {
       name: "Dr.Rohit Sharma",
-      // image: ggcoin,
+      image: counsellor,
       // short: "GGC",
       price: "$349.47",
       change: "-7.9%",
@@ -40,7 +40,7 @@ export default function DailyPrices() {
     },
     {
       name: "Dr.Ankit Singh",
-      // image: bitcoin,
+      image: counsellor,
       // short: "BTC",
       price: "$0.9434",
       change: "0.0%",
