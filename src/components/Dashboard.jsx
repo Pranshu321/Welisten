@@ -456,10 +456,8 @@ export default function Dashboard() {
                     </div>
                 </nav>
             </header>
-            
-            <div>
-                
-            </div>
+        
+
 
             <main className="pb-24">
                 <div className="pb-12 px-4 text-center sm:px-6 lg:px-8" style={{marginTop: "-78px"}}>
