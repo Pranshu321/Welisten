@@ -12,18 +12,9 @@ export default function App() {
     <div>
       <Router>
         <Switch>
-          <Route exact path="/">
-            {/* <Route path="/" element={<Landing />} /> */}
-            <Landing />
-            {/* <Homee /> */}
-          </Route>
-          <Route exact path="/dashboard">
-            <Route exact path="/Homee" element = {<Homee/>} />
-            <Route exact path="/blog" element={<Blog />} />
-            <Route exact path="/blog/:id" element={<Blog />} />
-            <Route exact path="/*" element={<Error />} />
-            <Dashboard />
-          </Route>
+          <Route exact path={"/"} component={Landing} />
+          <Route exact path={"/dashboard"} component={Dashboard} />
+          <Route exact path={"/blog"} component={Homee} />
         </Switch>
       </Router>
     </div>
