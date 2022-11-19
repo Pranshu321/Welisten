@@ -13,33 +13,33 @@ export default function Services() {
   const servicesData = [
     {
       mage: <FaUserMd size={50} color={"#FFB6B9"} />,
-      title: "One to One Councelling",
+      title: "One to One Counselling",
       descrption:
-        "Coinbase supports a variety of the most popular digital currencies.",
+        "Share your candid thoughts, experiences and feelings anonymously.",
     },
     {
-      mage: <BsCalendarPlusFill size={50} color={"#FFB6B9"}  />,
+      mage: <BsCalendarPlusFill size={50} color={"#FFB6B9"} />,
       title: "Share Your Experiences",
       descrption:
-        "Coinbase supports a variety of the most popular digital currencies.",
+        "An open platform for all to share your candid emotions, experiences and suggestions.",
     },
     {
-      mage: <MdPrivacyTip size={50} color={"#FFB6B9"}  />,
+      mage: <MdPrivacyTip size={50} color={"#FFB6B9"} />,
       title: "Privacy First",
       descrption:
-        "Coinbase supports a variety of the most popular digital currencies.",
+        "WeListen provides a safe space for users to meet experts and audience anonymously.",
     },
   ];
   return (
     <Section className="flex column j-center a-center gap">
       <div className="title-container flex column gap-1">
         <div className="title text-center ">
-          <h2 className="text-3xl">Start your treatment with us</h2>
+          <h2 className="text-3xl">How is WeListen different?</h2>
         </div>
         <div className="text-center text-xl">
           <h3>
-            Welisten has a variety of features that make it the best
-            place to release your tension and let you calm
+            Welisten has a variety of features that make it the best place to
+            release your tension and let you calm
           </h3>
         </div>
       </div>
@@ -47,9 +47,7 @@ export default function Services() {
         {servicesData.map(({ mage, title, descrption }) => {
           return (
             <div className="service text-center flex column gap-1" key={title}>
-              <div className="flex justify-center items-center">
-                 {mage}
-              </div>
+              <div className="flex justify-center items-center">{mage}</div>
               <h3 className="title">{title}</h3>
               <p className="description subdue">{descrption}</p>
             </div>
