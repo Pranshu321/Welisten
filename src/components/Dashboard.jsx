@@ -717,7 +717,7 @@ export default function Dashboard() {
                                         <a onClick={SendRoomid} className='text-black font-semibold pt-2'>Get room id</a>
                                     </div>
                                     <div className='mt-5'>
-                                        <a href='https://polygon-peer-to-peer-payment.vercel.app/' target={"_blank"}>
+                                        <a href='https://polygon-peer-to-peer-payment.vercel.app' target={"_blank"}>
                                             <Button text={"Thank You Token ❤"} />
                                         </a>
                                     </div>
