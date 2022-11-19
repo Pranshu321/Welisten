@@ -383,10 +383,8 @@ export default function Dashboard() {
                                                     key={category.name}
                                                     className={({ selected }) =>
                                                         classNames(
-                                                            selected
-                                                                ? "text-indigo-600 border-indigo-600"
-                                                                : "text-gray-900 border-transparent",
-                                                            "flex-1 whitespace-nowrap border-b-2 py-4 px-1 text-base font-medium"
+                                                            selected ? 'text-indigo-600 border-indigo-600' : 'text-gray-900 border-transparent',
+                                                            'flex-1 whitespace-nowrap border-b-2 py-4 px-1 text-base font-medium'
                                                         )
                                                     }
                                                 >
@@ -397,10 +395,7 @@ export default function Dashboard() {
                                     </div>
                                     <Tab.Panels as={Fragment}>
                                         {navigation.categories.map((category) => (
-                                            <Tab.Panel
-                                                key={category.name}
-                                                className="space-y-10 px-4 pt-10 pb-8"
-                                            >
+                                            <Tab.Panel key={category.name} className="space-y-10 px-4 pt-10 pb-8">
                                                 <div className="space-y-4">
                                                     {category.featured.map((item, itemIdx) => (
                                                         <div
@@ -414,20 +409,11 @@ export default function Dashboard() {
                                                             />
                                                             <div className="flex flex-col justify-end">
                                                                 <div className="bg-white bg-opacity-60 p-4 text-base sm:text-sm">
-                                                                    <a
-                                                                        href={item.href}
-                                                                        className="font-medium text-gray-900"
-                                                                    >
-                                                                        <span
-                                                                            className="absolute inset-0"
-                                                                            aria-hidden="true"
-                                                                        />
+                                                                    <a href={item.href} className="font-medium text-gray-900">
+                                                                        <span className="absolute inset-0" aria-hidden="true" />
                                                                         {item.name}
                                                                     </a>
-                                                                    <p
-                                                                        aria-hidden="true"
-                                                                        className="mt-0.5 text-gray-700 sm:mt-1"
-                                                                    >
+                                                                    <p aria-hidden="true" className="mt-0.5 text-gray-700 sm:mt-1">
                                                                         Shop now
                                                                     </p>
                                                                 </div>
@@ -452,10 +438,7 @@ export default function Dashboard() {
                                                                 >
                                                                     {section.items.map((item) => (
                                                                         <li key={item.name} className="flow-root">
-                                                                            <a
-                                                                                href={item.href}
-                                                                                className="-m-2 block p-2 text-gray-500"
-                                                                            >
+                                                                            <a href={item.href} className="-m-2 block p-2 text-gray-500">
                                                                                 {item.name}
                                                                             </a>
                                                                         </li>
@@ -473,10 +456,7 @@ export default function Dashboard() {
                                 <div className="space-y-6 border-t border-gray-200 py-6 px-4">
                                     {navigation.pages.map((page) => (
                                         <div key={page.name} className="flow-root">
-                                            <a
-                                                href={page.href}
-                                                className="-m-2 block p-2 font-medium text-gray-900"
-                                            >
+                                            <a href={page.href} className="-m-2 block p-2 font-medium text-gray-900">
                                                 {page.name}
                                             </a>
                                         </div>
@@ -489,9 +469,7 @@ export default function Dashboard() {
                                             alt=""
                                             className="block h-auto w-5 flex-shrink-0"
                                         />
-                                        <span className="ml-3 block text-base font-medium text-gray-900">
-                                            CAD
-                                        </span>
+                                        <span className="ml-3 block text-base font-medium text-gray-900">CAD</span>
                                         <span className="sr-only">, change currency</span>
                                     </a>
                                 </div>
@@ -504,49 +482,30 @@ export default function Dashboard() {
             <header className="relative bg-white">
                 <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="border-b border-gray-200">
-                        <div className="flex h-16 items-center justify-center">
+                        <div className='flex h-16 items-center justify-between'>
                             <div>
-                                <h3 className="text-[#61C0BF] text-3xl font-bold">
-                                    Welisten
-                                </h3>
+                                <a href='/'>
+                                    <h3 className='text-[#61C0BF] text-3xl font-bold'>Welisten</h3>
+                                </a>
+                            </div>
+                            <div onClick={() => setTimeout(() => window.location.href = "/", 1000)}>
+                                <Disconnect />
                             </div>
                         </div>
                     </div>
                 </nav>
             </header>
 
-            <div></div>
+            <div>
+
+            </div>
 
             <main className="pb-24">
-                <div
-                    className="pb-12 px-4 text-center sm:px-6 lg:px-8"
-                    style={{ marginTop: "-78px" }}
-                >
-                    <h1 className="text-4xl font-bold tracking-tight text-gray-900">
-                        Welcome User
-                    </h1>
-                    <div class="border h-full bg-teal-300">
-                        <p className=" mx-auto mt-4 max-w-xl text-base text-gray-500">
-                            Feeling alone or finding it tough to share your thoughts &
-                            feelings? Don't worry we've got your back! Talk to experts all
-                            around the Globe.
-                        </p>
-                    </div>
-                    <div class="border flex justify-between border-2">
-                        <div className="h-20 w-64 flex-row mr-7 bg-red-400">
-
-                            <img
-                                src="https://media.istockphoto.com/id/1015399630/photo/making-profile.jpg?s=612x612&w=0&k=20&c=2xSYvnRqJefeWzywD-auNLd2-0HbuTkFSLJ1QBK7btg="
-                                alt=""
-                            />
-                        </div>
-                        <div className="h-20 flex-initial w-64 space-x-12 bg-red-400">
-                            <img
-                                src="https://media.istockphoto.com/id/1015399630/photo/making-profile.jpg?s=612x612&w=0&k=20&c=2xSYvnRqJefeWzywD-auNLd2-0HbuTkFSLJ1QBK7btg="
-                                alt=""
-                            />
-                        </div>
-                    </div>
+                <div className="pb-12 px-4 text-center sm:px-6 lg:px-8" style={{ marginTop: "-78px" }}>
+                    <h1 className="text-4xl font-bold tracking-tight text-gray-900">Welcome User</h1>
+                    <p className="mx-auto mt-4 max-w-xl text-base text-gray-500">
+                        Feeling alone or finding it tough to share your thoughts & feelings? Don't worry we've got your back! Talk to experts all around the Globe.
+                    </p>
                 </div>
                 {/* Filters */}
                 <Disclosure
@@ -579,15 +538,10 @@ export default function Dashboard() {
                         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-x-4 px-4 text-sm sm:px-6 md:gap-x-6 lg:px-8">
                             <div className="grid auto-rows-min grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-6">
                                 <fieldset>
-                                    <legend className="block font-medium text-black text-xl">
-                                        Mental Issues
-                                    </legend>
+                                    <legend className="block font-medium text-black text-xl">Mental Issues</legend>
                                     <div className="space-y-6 pt-6 sm:space-y-4 sm:pt-4">
                                         {filters.price.map((option, optionIdx) => (
-                                            <div
-                                                key={option.value}
-                                                className="flex items-center text-base sm:text-sm"
-                                            >
+                                            <div key={option.value} className="flex items-center text-base sm:text-sm">
                                                 <input
                                                     id={`price-${optionIdx}`}
                                                     name="price[]"
@@ -596,18 +550,15 @@ export default function Dashboard() {
                                                     className="h-4 w-4 flex-shrink-0 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                                                     defaultChecked={option.checked}
                                                 />
-                                                <label
-                                                    htmlFor={`price-${optionIdx}`}
-                                                    className="ml-3 min-w-0 flex-1 text-gray-600"
-                                                >
+                                                <label htmlFor={`price-${optionIdx}`} className="ml-3 min-w-0 flex-1 text-gray-600">
                                                     {option.label}
                                                 </label>
                                             </div>
                                         ))}
                                     </div>
                                 </fieldset>
-                                {/* <fieldset>
-                                    <legend className="block font-medium">Color</legend>
+                                <fieldset>
+                                    <legend className="block font-medium">Sexual Issues</legend>
                                     <div className="space-y-6 pt-6 sm:space-y-4 sm:pt-4">
                                         {filters.color.map((option, optionIdx) => (
                                             <div key={option.value} className="flex items-center text-base sm:text-sm">
@@ -669,7 +620,6 @@ export default function Dashboard() {
                                     </div>
                                 </fieldset>
                             </div> */}
-                            </div>
                         </div>
                     </Disclosure.Panel>
                     <div className="col-start-1 row-start-1 py-4">
@@ -702,11 +652,9 @@ export default function Dashboard() {
                                                         <a
                                                             href={option.href}
                                                             className={classNames(
-                                                                option.current
-                                                                    ? "font-medium text-gray-900"
-                                                                    : "text-gray-500",
-                                                                active ? "bg-gray-100" : "",
-                                                                "block px-4 py-2 text-sm"
+                                                                option.current ? 'font-medium text-gray-900' : 'text-gray-500',
+                                                                active ? 'bg-gray-100' : '',
+                                                                'block px-4 py-2 text-sm'
                                                             )}
                                                         >
                                                             {option.name}
@@ -723,20 +671,14 @@ export default function Dashboard() {
                 </Disclosure>
 
                 {/* Product grid */}
-                <section
-                    aria-labelledby="products-heading"
-                    className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8"
-                >
+                <section aria-labelledby="products-heading" className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">
                     <h2 id="products-heading" className="sr-only">
                         Products
                     </h2>
 
                     <div className="-mx-px grid grid-cols-2 border-l border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-4">
                         {products.map((product) => (
-                            <div
-                                key={product.id}
-                                className="group relative border-r border-b border-gray-200 p-4 sm:p-6"
-                            >
+                            <div key={product.id} className="group relative border-r border-b border-gray-200 p-4 sm:p-6">
                                 <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75">
                                     <img
                                         src={product.imageSrc}
@@ -746,10 +688,7 @@ export default function Dashboard() {
                                 </div>
                                 <div className="pt-10 pb-4 text-center">
                                     <h3 className="text-sm font-medium text-gray-900">
-                                        <a
-                                            href={product.href}
-                                            className="text-black text-xl font-semibold"
-                                        >
+                                        <a href={product.href} className="text-black text-xl font-semibold">
                                             <span className="text-black" />
                                             {product.name}
                                         </a>
@@ -761,23 +700,28 @@ export default function Dashboard() {
                                                 <StarIcon
                                                     key={rating}
                                                     className={classNames(
-                                                        product.rating > rating
-                                                            ? "text-yellow-400"
-                                                            : "text-gray-200",
-                                                        "flex-shrink-0 h-5 w-5"
+                                                        product.rating > rating ? 'text-yellow-400' : 'text-gray-200',
+                                                        'flex-shrink-0 h-5 w-5'
                                                     )}
                                                     aria-hidden="true"
                                                 />
                                             ))}
                                         </div>
-                                        <p className="mt-1 text-sm text-gray-500">
-                                            Talking Time : {product.reviewCount} mins
-                                        </p>
+                                        <p className="mt-1 text-sm text-gray-500">Talking Time : {product.reviewCount} mins</p>
                                         {/* <p className="mt-1 text-sm text-gray-500">{product.reviewCount} </p> */}
                                     </div>
-                                    <p className="mt-4 text-base font-medium text-gray-500">
-                                        {product.price}
-                                    </p>
+                                    <p className="mt-4 text-base font-medium text-gray-500">{product.price}</p>
+                                    <div className='mt-2'>
+                                        <a target={"_blank"} href='https://welistenchat.up.railway.app'>
+                                            <Button text={"Chat"} />
+                                        </a>
+                                        <a onClick={SendRoomid} className='text-black font-semibold pt-2'>Get room id</a>
+                                    </div>
+                                    <div className='mt-5'>
+                                        <a href='https://donate.stripe.com/test_eVa5ljcKu9EjfDOcMP' target={"_blank"}>
+                                            <Button text={"Thank You Token ❤"} />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -785,6 +729,5 @@ export default function Dashboard() {
                 </section>
             </main>
         </div>
-    );
+    )
 }
-
