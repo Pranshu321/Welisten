@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import Button from "./Button";
+import { Wallet } from "./Wallet";
 
 export default function Navbar() {
   const links = ["Home",  "About" , "Blog", "Contact"];
@@ -37,9 +38,10 @@ export default function Navbar() {
           })}
         </ul>
       </div>
-      <div className="auth flex gap-1">
-        <Button text="Sign In" subduedButton />
-        <Button text="Sign Up" />
+      <div className="auth flex gap-1" onClick={()=>setTimeout(()=>window.location.href="/dashboard" , 3000)}>
+        {/* <Button text="Sign In" subduedButton />
+        <Button text="Sign Up" /> */}
+        <Wallet />
       </div>
     </Nav>
   );

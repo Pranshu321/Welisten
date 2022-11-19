@@ -2,6 +2,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Menu, Popover, Tab, Transition } from '@headlessui/react'
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, UserIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, StarIcon } from '@heroicons/react/20/solid'
+import { Disconnect } from './Disconnect'
 const navigation = {
     categories: [
         {
@@ -448,24 +449,27 @@ export default function Dashboard() {
             <header className="relative bg-white">
                 <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="border-b border-gray-200">
-                        <div className='flex h-16 items-center justify-center'>
+                        <div className='flex h-16 items-center justify-between'>
                             <div>
                                 <h3 className='text-[#61C0BF] text-3xl font-bold'>Welisten</h3>
+                            </div>
+                            <div onClick={() => setTimeout(() => window.location.href = "/", 1000)}>
+                                <Disconnect />
                             </div>
                         </div>
                     </div>
                 </nav>
             </header>
-            
+
             <div>
-                
+
             </div>
 
             <main className="pb-24">
-                <div className="pb-12 px-4 text-center sm:px-6 lg:px-8" style={{marginTop: "-78px"}}>
+                <div className="pb-12 px-4 text-center sm:px-6 lg:px-8" style={{ marginTop: "-78px" }}>
                     <h1 className="text-4xl font-bold tracking-tight text-gray-900">Welcome User</h1>
                     <p className="mx-auto mt-4 max-w-xl text-base text-gray-500">
-                        Feeling alone or finding it tough to share your thoughts & feelings? Don't worry we've got your back! Talk to experts all around the Globe. 
+                        Feeling alone or finding it tough to share your thoughts & feelings? Don't worry we've got your back! Talk to experts all around the Globe.
                     </p>
                 </div>
                 {/* Filters */}
