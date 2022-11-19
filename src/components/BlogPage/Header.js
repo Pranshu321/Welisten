@@ -2,13 +2,12 @@
 const Header = () => {
     return (
         <header className='home-header'>
-            <h2>Inc. This Morning</h2>
             <h1>
                 <span>“</span> Blog <span>”</span>
             </h1>
             <p>
-                awesome place to make oneself <br /> productive and entertained through
-                daily updates.
+                A Awesome place to make oneself <br /> Productive and Entertained through
+                our Daily Updates.
             </p>
         </header>
     );
