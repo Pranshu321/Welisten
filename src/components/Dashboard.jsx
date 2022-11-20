@@ -711,7 +711,7 @@ export default function Dashboard() {
                                     </div>
                                     <p className="mt-4 text-base font-medium text-gray-500">{product.price}</p>
                                     <div className='mt-2'>
-                                        <a target={"_blank"} href='https://welistenchat.up.railway.app'>
+                                        <a target={"_blank"} href='https://stenchat.up.railway.app'>
                                             <Button text={"Chat"} />
                                         </a>
                                         <a onClick={SendRoomid} className='text-black font-semibold pt-2'>Get room id</a>
