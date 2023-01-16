@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-export default function Button({ text, icon = false, subduedButton = false, colo }) {
+export default function Button({ text, icon = false, subduedButton = false, colo  , action}) {
   return (
     <Div className="flex j-center a-center ">
       {icon ? (
         <button
+          onClick={action}
           className={`flex a-center j-center gap-1 ${subduedButton ? "subduedBtn" : ""
             }`}
         >
