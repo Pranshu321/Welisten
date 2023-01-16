@@ -19,6 +19,7 @@ import {
 	FunnelIcon,
 	StarIcon,
 } from "@heroicons/react/20/solid";
+import emailjs from "emailjs-com";
 import toast, { Toaster } from "react-hot-toast";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useHistory } from "react-router-dom";
@@ -362,11 +363,16 @@ const ids = [
 	"gret435",
 ];
 
-function SendRoomid() {
-	toast.success(`Your Chat room Id : ${ids[Math.floor(Math.random() * 20)]}`);
-}
-
 export default function Dashboard() {
+	const [newid, setnewid] = useState(0);
+
+	function SendRoomid() {
+		const id = ids[Math.floor(Math.random() * 20)];
+		setnewid(id);
+		navigator.clipboard.writeText(id);
+		toast.success(`Your Chat room Id : ${id}`);
+		toast.success(`Copy to clipboard`);
+	}
 	const navi = useHistory();
 	const [open, setOpen] = useState(false);
 	const [photo, setphoto] = useState("");
@@ -389,6 +395,32 @@ export default function Dashboard() {
 	useEffect(() => {
 		checkusr();
 	}, []);
+
+	function sendMail() {
+		// console.log(email);
+		if (newid != 0) {
+			emailjs
+				.send(
+					"service_6kpfmja",
+					"template_fnjdaim",
+					{
+						email: "pranshujain0111@gmail.com",
+						link: `https://chatin-1k5f.onrender.com/chat.html?name=Doctor&room=${newid}`,
+					},
+					"M59Q72Ln2jOVV1krL"
+				)
+				.then(function (response) {
+					console.log("SUCCESS!", response.status, response.text);
+					// setemail("");
+				})
+				.catch((err) => {
+					// toast.error("Invalid Email or Server Error");
+					console.log(err);
+				});
+		} else {
+			toast.error("Please first get you room id !!");
+		}
+	}
 
 	return (
 		<div className="bg-white">
@@ -866,7 +898,13 @@ export default function Dashboard() {
 										{product.price}
 									</p>
 									<div className="mt-2">
-										<a target={"_blank"} href="https://stenchat.up.railway.app">
+										<a
+											target={"_blank"}
+											onClick={sendMail}
+											href={
+												newid != 0 ? `https://chatin-1k5f.onrender.com` : null
+											}
+										>
 											<Button text={"Chat"} />
 										</a>
 									</div>
