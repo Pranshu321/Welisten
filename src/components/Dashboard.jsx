@@ -918,7 +918,7 @@ export default function Dashboard() {
 									</div>
 									<div className="mt-5">
 										<a
-											href="https://polygon-peer-to-peer-payment.vercel.app"
+											href="https://donate.stripe.com/test_8wM6rO4XKgQy5Ec4gg"
 											target={"_blank"}
 										>
 											<Button text={"Thank You Token ❤"} />
