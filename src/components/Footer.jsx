@@ -29,10 +29,10 @@ export default function Footer() {
             <h2 className="text-3xl font-semibold">Welisten</h2>
           </div>
           <div className="address">
-            <p>IIIT Delhi , Okhla Industrial Area , Delhi :- 110032</p>
+            <p>ADGITM, Shastri Park, Shahdara, New Delhi, Delhi : 110053</p>
           </div>
           <div className="info">
-            <span>T : +91-9677883255</span>
+            <span>T : 011 4990 5900</span>
             <span>E : hello@welisten.com</span>
           </div>
           <div className="social-icons flex gap-2">
