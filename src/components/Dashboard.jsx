@@ -902,7 +902,7 @@ export default function Dashboard() {
 											target={"_blank"}
 											onClick={sendMail}
 											href={
-												newid != 0 ? `https://chatin-1k5f.onrender.com` : null
+												newid != 0 ? `https://web-production-8608.up.railway.app/` : null
 											}
 										>
 											<Button text={"Chat"} />
